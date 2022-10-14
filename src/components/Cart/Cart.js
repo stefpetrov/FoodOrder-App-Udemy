@@ -44,11 +44,12 @@ const Cart = (props) => {
                 orderedItems: cartCtx.items
             })
         })
+
+        // implement error handling
+        
         setIsSubmitting(false)
         setDidSubmit(true)
         cartCtx.clearCart()
-
-
 
 
     }

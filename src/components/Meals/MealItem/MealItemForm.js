@@ -1,5 +1,5 @@
-import { useContext, useRef, useState } from "react"
-import CartContext from "../../../store/cart-context"
+import { useRef, useState } from "react"
+
 import Input from "../../UI/Input"
 import classes from "./MealItemForm.module.css"
 
@@ -15,7 +15,7 @@ const MealItemForm = (props) => {
         const enteredAmount = amountInputRef.current.value
         const enteredAmountNumber = +amountInputRef.current.value
 
-        if (enteredAmount.trim().length == 0 || enteredAmountNumber < 1 || enteredAmountNumber > 5) {
+        if (enteredAmount.trim().length === 0 || enteredAmountNumber < 1 || enteredAmountNumber > 5) {
             setAmountIsValid(false)
             return
         }
