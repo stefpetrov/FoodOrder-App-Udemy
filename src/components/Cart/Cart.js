@@ -49,6 +49,7 @@ const Cart = (props) => {
                 <span>Total Amount</span>
                 <span>{totalAmount}</span>
             </div>
+
             {isCheckout && <Checkout onCancel={props.onCloseCart}/>}
             <div className={classes.actions} >
               {!isCheckout && <button onClick={props.onCloseCart} className={classes['button--alt']}>Close</button>}
