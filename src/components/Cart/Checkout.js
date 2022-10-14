@@ -56,11 +56,15 @@ const Checkout = (props) => {
 
         }
 
-        // sumbit cart here
+        props.onConfirm({
+            name: enteredName,
+            street:enteredStret,
+            city:enteredCity,
+            postalCode:enteredPostal
+        })
 
     }
 
-    // const nameControlClasses = `${classes.control} ${formInputsValidity.name && classes.invalid}`}
 
 
     return (
