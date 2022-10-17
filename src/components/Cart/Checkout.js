@@ -6,8 +6,8 @@ const isFiveChars = (value) => value.trim().length === 5
 
 
 const Checkout = (props) => {
-    const [formInputsValidity,setFormInputsValidity] = useState({
-        name:true,
+    const [formInputsValidity, setFormInputsValidity] = useState({
+        name: true,
         street: true,
         city: true,
         postalCode: true
@@ -23,7 +23,7 @@ const Checkout = (props) => {
     const confirmHandler = (event) => {
         event.preventDefault()
 
- 
+
 
 
         const enteredName = nameInputRef.current.value
@@ -58,9 +58,9 @@ const Checkout = (props) => {
 
         props.onConfirm({
             name: enteredName,
-            street:enteredStret,
-            city:enteredCity,
-            postalCode:enteredPostal
+            street: enteredStret,
+            city: enteredCity,
+            postalCode: enteredPostal
         })
 
     }
